@@ -9,7 +9,7 @@ This Python-based pipeline is used for identifying and extracting anaphylaxis ca
 2. Decodes byte‐type columns and converts the Admit_Date column to datetime.
 3. Classifies the encounter type into Inpatient, ED, Outpatient, or Other.
 4. Creates indicator columns for whether the row’s diagnosis (Dx) falls into List 1, List 2 (group I and II), or List 3. **Note: For the Dx that belongs to List 1, 2, and 3, please refer to [Here](./Cohort%20identification%20of%20potential%20anaphylaxis%20events.pdf)**
-5. Implements three criteria (“paths”) for anaphylaxis:
+5. Implements three criteria (“paths”) for anaphylaxis (for details, please refer to [Here](./Cohort%20identification%20of%20potential%20anaphylaxis%20events.pdf)):
 
     • Path 1 (“Wash criterion A”): For an inpatient/ED row with a List 1 code, check that no prior encounter (within 60 days) for the same patient had the same List 1 code.
    
