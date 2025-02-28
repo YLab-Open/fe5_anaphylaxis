@@ -7,7 +7,7 @@ This Python-based pipeline is used for identifying and extracting anaphylaxis ca
 ## Pipeline Structure
 1. Reads two SAS files (for 2019 and 2020)
 2. Decodes byte‐type columns and converts the Admit_Date column to datetime.
-3*. Classifies the encounter type into Inpatient, ED, Outpatient, or Other.
+3. Classifies the encounter type into Inpatient, ED, Outpatient, or Other.
 4. Creates indicator columns for whether the row’s diagnosis (Dx) falls into List 1, List 2 (group I and II), or List 3. **Note: For the Dx that belongs to List 1, 2, and 3, please refer to [Here](./Cohort%20identification%20of%20potential%20anaphylaxis%20events.pdf)**
 5. Implements three criteria (“paths”) for anaphylaxis:
 
@@ -20,6 +20,7 @@ This Python-based pipeline is used for identifying and extracting anaphylaxis ca
 6. Then, at the encounter level (i.e. for every [PATIENT_NUM, ENCOUNTER_NUM] pair) the script marks Feature_Status = "A" if any row meets any of the three criteria and "U" otherwise.
 7. Finally, it outputs a CSV file with the required columns and fixed values for some.
 
+## How the encounter type is determined
 *Below are the rules of classifying the encounter type:
 
 • Emergency department encounter includes: ED
@@ -28,7 +29,9 @@ This Python-based pipeline is used for identifying and extracting anaphylaxis ca
 
 • Outpatient encounter includes: AV, IS, OS, IC, TH, OA
 
-where the abbreviations are defined as follows:
+• All other types are classified as "Other"
+
+The abbreviations are defined as follows:
 
 • AV=Ambulatory  Visit
 
