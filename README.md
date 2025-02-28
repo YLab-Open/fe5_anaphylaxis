@@ -23,36 +23,36 @@ This Python-based pipeline is used for identifying and extracting anaphylaxis ca
 ## How the encounter type is determined
 *Below are the rules of classifying the encounter type:
 
-• Emergency department encounter includes: ED
+• **Emergency** department encounter includes: **ED**
 
-• Inpatient encounter includes: EI, IP
+• **Inpatient** encounter includes: **EI, IP**
 
-• Outpatient encounter includes: AV, IS, OS, IC, TH, OA
+• **Outpatient** encounter includes: **AV, IS, OS, IC, TH, OA**
 
-• All other types are classified as "Other"
+• All **other** types are classified as **"Other"**
 
 The abbreviations are defined as follows:
 
-• AV=Ambulatory  Visit
+• **AV**=Ambulatory  Visit
 
-• ED=Emergency  Department
+• **ED**=Emergency  Department
 
-• EI=Emergency  Department  Admit  to  Inpatient  Hospital  Stay  (permissible  substitution)
+• **EI**=Emergency  Department  Admit  to  Inpatient  Hospital  Stay  (permissible  substitution)
 
-• IP=Inpatient  Hospital  Stay
+• **IP**=Inpatient  Hospital  Stay
 
-• IS=Non-Acute  Institutional  Stay
+• **IS**=Non-Acute  Institutional  Stay
 
-• OS=Observation  Stay
+• **OS**=Observation  Stay
 
-• IC=Institutional  Professional  Consult  (permissible  substitution)
+• **IC**=Institutional  Professional  Consult  (permissible  substitution)
 
-• TH=Telehealth
+• **TH**=Telehealth
 
-• OA=Other  Ambulatory  Visit
+• **OA**=Other  Ambulatory  Visit
 
-• NI=No  information
+• **NI**=No  information
 
-• UN=Unknown
+• **UN**=Unknown
 
-• OT=Other
+• **OT**=Other
