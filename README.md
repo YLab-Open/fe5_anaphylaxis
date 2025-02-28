@@ -7,7 +7,7 @@ This Python-based pipeline is used for identifying and extracting anaphylaxis ca
 ## Pipeline Structure
 1. Reads two SAS files (for 2019 and 2020)
 2. Decodes byte‐type columns and converts the Admit_Date column to datetime.
-*3. Classifies the encounter type into Inpatient, ED, Outpatient, or Other.
+3*. Classifies the encounter type into Inpatient, ED, Outpatient, or Other.
 4. Creates indicator columns for whether the row’s diagnosis (Dx) falls into List 1, List 2 (group I and II), or List 3. **Note: For the Dx that belongs to List 1, 2, and 3, please refer to [Here](./Cohort%20identification%20of%20potential%20anaphylaxis%20events.pdf)**
 5. Implements three criteria (“paths”) for anaphylaxis:
 
