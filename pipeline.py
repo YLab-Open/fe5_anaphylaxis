@@ -292,10 +292,18 @@ encounter_df.rename(columns={
     'PROVIDER_ID': 'ProviderID'
 }, inplace=True)
 
-# Order the final columns as required.
-final_cols = ['PatID', 'EncounterID', 'FeatureID', 'Feature_dt', 'Feature',
-              'FE_CodeType', 'ProviderID', 'Confidence', 'Feature_Status']
-final_df = encounter_df[final_cols]
+# Group the rows and aggregate the Feature_Status values of different NoteIDs by the order
+order = {"A": 2, "U": 1}
+df_grouped_status = encounter_df.groupby(["PatID", "EncounterID", "FeatureID", "Feature", "FE_CodeType", "Confidence"]).agg({"Feature_Status": lambda x: max(x, key=lambda y: order[y])}).reset_index()
+
+# Group the rows and aggregate the Feature_dt and ProviderID of different NoteIDs by the earliest date
+df_grouped_date = encounter_df.groupby(["PatID", "EncounterID", "FeatureID", "Feature", "FE_CodeType", "Confidence"]).agg({"Feature_dt": "min", "ProviderID": "first"}).reset_index()
+
+# Merge the two DataFrames
+encounter_df = pd.merge(df_grouped_date, df_grouped_status, on=["PatID", "EncounterID", "FeatureID", "Feature", "FE_CodeType", "Confidence"], how="inner")
+
+# Ensure that the columns are in the order of the original table
+final_df = encounter_df[["PatID", "EncounterID", "FeatureID", "Feature_dt", "Feature", "FE_CodeType", "ProviderID", "Confidence", "Feature_Status"]]
 
 # Sort the rows by PatID
 final_df = final_df.sort_values('PatID')
