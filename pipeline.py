@@ -280,7 +280,7 @@ encounter_df['Admit_Date'] = pd.to_datetime(encounter_df['Admit_Date'])
 encounter_df.rename(columns={'Admit_Date': 'Feature_dt'}, inplace=True)
 
 # Add constant columns as specified.
-encounter_df['FeatureID']   = 1001
+encounter_df['FeatureID']   = 1004
 encounter_df['Feature']     = "C0002792"
 encounter_df['FE_CodeType'] = "UC"
 encounter_df['Confidence']  = "N"
@@ -309,6 +309,8 @@ final_df = encounter_df[["PatID", "EncounterID", "FeatureID", "Feature_dt", "Fea
 final_df = final_df.sort_values(by=["PatID", "EncounterID"], inplace=True)
 
 final_df.reset_index(drop=True)
+
+final_df["FeatureID"] = final_df.index.map(lambda x: f"1004{x:08d}")
 
 ###########################
 # 9. Write the final CSV file
