@@ -327,7 +327,7 @@ id = 1004
 name = "anaphylaxis pipeline"
 version = "1.0.0"
 run_date = date.today()
-description = "Rule-based pipeline to extract anaphylaxis"
+description = "Rule-based pipeline to extract anaphylaxis status."
 source = "https://github.com/YLab-Open/fe5_anaphylaxis"
 
 featureid_df = pd.DataFrame({
