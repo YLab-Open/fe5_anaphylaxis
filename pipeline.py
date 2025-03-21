@@ -300,13 +300,15 @@ df_grouped_status = encounter_df.groupby(["PatID", "EncounterID", "FeatureID", "
 df_grouped_date = encounter_df.groupby(["PatID", "EncounterID", "FeatureID", "Feature", "FE_CodeType", "Confidence"]).agg({"Feature_dt": "min", "ProviderID": "first"}).reset_index()
 
 # Merge the two DataFrames
-encounter_df = pd.merge(df_grouped_date, df_grouped_status, on=["PatID", "EncounterID", "FeatureID", "Feature", "FE_CodeType", "Confidence"], how="inner")
+merged_df = pd.merge(df_grouped_date, df_grouped_status, on=["PatID", "EncounterID", "FeatureID", "Feature", "FE_CodeType", "Confidence"], how="inner")
 
 # Ensure that the columns are in the order of the original table
 final_df = encounter_df[["PatID", "EncounterID", "FeatureID", "Feature_dt", "Feature", "FE_CodeType", "ProviderID", "Confidence", "Feature_Status"]]
 
-# Sort the rows by PatID
-final_df = final_df.sort_values('PatID')
+# Sort the rows by PatID and EncounterID
+final_df = final_df.sort_values(by=["PatID", "EncounterID"], inplace=True)
+
+final_df.reset_index(drop=True)
 
 ###########################
 # 9. Write the final CSV file
@@ -323,7 +325,7 @@ id = 1001
 name = "anaphylaxis pipeline"
 version = "1.0.0"
 run_date = date.today()
-description = "Regular expression-based pipeline to extract anaphylaxis"
+description = "Rule-based pipeline to extract anaphylaxis"
 source = "https://github.com/YLab-Open/fe5_anaphylaxis"
 
 featureid_df = pd.DataFrame({
@@ -334,6 +336,8 @@ featureid_df = pd.DataFrame({
     'Description': [description],
     'Source': [source]
 })
+
+featureid_df["FeatureID"] = final_df.index.map(lambda x: f"{id}{x:08d}")
 
 featureid_df_output_file = "../Result/fe_pipeline_table.csv"
 featureid_df.to_csv(featureid_df_output_file, index=False)
