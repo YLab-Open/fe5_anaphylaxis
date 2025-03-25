@@ -303,7 +303,7 @@ df_grouped_date = encounter_df.groupby(["PatID", "EncounterID", "FeatureID", "Fe
 merged_df = pd.merge(df_grouped_date, df_grouped_status, on=["PatID", "EncounterID", "FeatureID", "Feature", "FE_CodeType", "Confidence"], how="inner")
 
 # Ensure that the columns are in the order of the original table
-final_df = encounter_df[["PatID", "EncounterID", "FeatureID", "Feature_dt", "Feature", "FE_CodeType", "ProviderID", "Confidence", "Feature_Status"]]
+final_df = merged_df[["PatID", "EncounterID", "FeatureID", "Feature_dt", "Feature", "FE_CodeType", "ProviderID", "Confidence", "Feature_Status"]]
 
 # Sort the rows by PatID and EncounterID
 final_df = final_df.sort_values(by=["PatID", "EncounterID"], inplace=True)
