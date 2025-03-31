@@ -23,7 +23,7 @@ A. [Pre-processing](./anaphylaxis_preprocessing.ipynb)
 
 B. [Assign feature status for anaphylaxis using cTAKES](./fe5_cTAKES)
 
-Based on the CSV file generated through step A, the pipeline uses the [fe5_cTAKES pipeline](https://github.com/YLab-Open/fe5_cTAKES/tree/main), to extract anaphylaxis-related features from the EHR notes of the target patients. The CUIs used for anaphylaxis is available [Here](./CUI/anaphylaxis_umls_cui_clean.txt)
+Based on the CSV file generated through step A, the pipeline uses the [fe5_cTAKES pipeline](https://github.com/YLab-Open/fe5_cTAKES/tree/main), to extract anaphylaxis-related features from the EHR notes of the target patients. The CUIs used for anaphylaxis is available [Here](./fe5_cTAKES/CUI/anaphylaxis_umls_cui_clean.txt)
 
 C. [Post-processing](./anaphylaxis_postprocessing.ipynb)
 
