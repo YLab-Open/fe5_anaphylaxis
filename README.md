@@ -23,8 +23,8 @@ A. [Pre-processing](./anaphylaxis_preprocessing.ipynb)
 
 B. [Assign feature status for anaphylaxis using cTAKES](./fe5_cTAKES)
 
-Based on the CSV file generated through step A, the pipeline uses the [fe5_cTAKES pipeline](https://github.com/YLab-Open/fe5_cTAKES/tree/main), to extract anaphylaxis-related features from the EHR notes of the target patients. The CUIs used for anaphylaxis is available [Here](./fe5_cTAKES/CUI/anaphylaxis_umls_cui_clean.txt)
-
+Based on the CSV file generated through step A, the pipeline uses the [fe5_cTAKES pipeline](https://github.com/YLab-Open/fe5_cTAKES/tree/main), to extract anaphylaxis-related features from the EHR notes of the target patients. The CUIs used for anaphylaxis is available [Here](./fe5_cTAKES/CUI/anaphylaxis_umls_cui_clean.txt). We collected anaphylaxis-related CUIs from [UMLS Metathesaurus](https://uts.nlm.nih.gov/uts/umls/home), filtering results by searching “Anaphylaxis.” After manually removing unrelated CUIs, we retained 123 relevant CUIs.
+ 
 C. [Post-processing](./anaphylaxis_postprocessing.ipynb)
 
 Based on the output of step B, this step generates an encounter-level result that aggregates the note-level features extracted from the EHR notes of the target patients. The reason of using a standalone post-processing is that for anaphylaxis, we only have two feature status code (A or U), which is different from the original fe5_cTAKES pipeline, so any non-A feature status needs be reassigned to U before aggregtion.
