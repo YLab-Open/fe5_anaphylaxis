@@ -6,6 +6,7 @@ This Python-based pipeline is used for identifying and extracting anaphylaxis ca
 
 ## Pipeline Structure
 This pipeline involves three main steps:
+
 A. [Pre-processing](./anaphylaxis_preprocessing.ipynb)
 
 1. Reads four SAS files that contains the disgnosis, procedure codes, and encounter note types for 2019 and 2020
