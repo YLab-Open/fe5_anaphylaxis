@@ -1,0 +1,123 @@
+anaphylaxis | C0002792
+Anaphylaxis;non medication | C0850803
+Anaphylactic shock | C4316895
+Food anaphylaxis | C0685898
+Idiopathic anaphylaxis | C0413235
+Exercise-Induced Anaphylaxis | C0344183
+Localized anaphylaxis | C0274305
+Cutaneous anaphylaxis | C0274306
+Anaphylaxis, CTCAE | C4553015
+Acute anaphylaxis | C0857035
+Postoperative anaphylaxis | C5788565
+drug related anaphylaxis | C0850607
+Drug-induced anaphylaxis | C0344168
+Peanut-induced anaphylaxis | C0344164
+Penicillin-induced anaphylaxis | C0344169
+Insulin-induced anaphylaxis | C0344170
+Seafood-induced anaphylaxis | C0344165
+Aeroallergen-induced anaphylaxis | C0344173
+Anaphylaxis caused by venom | C0344159
+anaphylaxis from anesthesia | C2103669
+Anaphylaxis caused by low temperature | C4546212
+Anaphylaxis caused by component of vaccine product | C5549840
+Wasp sting-induced anaphylaxis | C0344161
+Bee sting-induced anaphylaxis | C0344160
+Anaphylaxis caused by seed | C2711964
+Anaphylaxis caused by fruit | C1998404
+Anaphylaxis caused by shellfish | C2063647
+Anaphylaxis caused by vegetable | C1997442
+Anaphylaxis caused by fish | C1998391
+anaphylaxis due to latex | C2064633
+Egg white-induced anaphylaxis | C0344166
+Seminal fluid-induced anaphylaxis | C0344172
+Human protein-induced anaphylaxis | C0344171
+Anaphylaxis caused by analgesic | C5817152
+Anaphylaxis caused by sulfonamide | C5817051
+Anaphylaxis caused by anesthetic | C5817153
+Anaphylaxis caused by egg | C5817052
+Anaphylaxis caused by mollusk | C1997452
+Anaphylaxis after allergen immunotherapy | C5192386
+Iatrogenic non-allergic anaphylaxis | C1304189
+anaphylaxis due to vaccination | C3251584
+Grade 3 Anaphylaxis, CTCAE | C4686068
+Grade 4 Anaphylaxis, CTCAE | C4686618
+Grade 5 Anaphylaxis, CTCAE | C4687036
+Anaphylaxis within 24 hours | C4036090
+Medical-allergic reaction/anaphylaxis | C3842027
+Anaphylaxis due to serum | C3263869
+Anaphylaxis caused by tree nut | C2711329
+Anaphylaxis caused by ingested food | C1304184
+Cow's milk protein-induced anaphylaxis | C0344167
+anaphylaxis due to meningococcal vaccine | C5781443
+Anaphylaxis caused by rotavirus vaccine | C3494650
+Anaphylaxis caused by hymenoptera venom | C2315598
+Anaphylaxis caused by lupin flour | C4305004
+Anaphylaxis caused by food additive | C5817053
+Anaphylaxis caused by antibacterial agent | C5687620
+Food-dependent exercise-induced anaphylaxis | C5546138
+Anaphylaxis caused by sulfur dioxide | C4305609
+Anaphylaxis caused by insect venom | C4543744
+Anaphylaxis caused by sulfite salt | C4274489
+Anaphylaxis caused by hornet venom | C5817054
+Exercise-Induced Anaphylaxis and Urticaria | C5691285
+Wheat-Dependent Exercise-Induced Anaphylaxis | C5690726
+anaphylaxis due to pneumococcal vaccine | C5824940
+anaphylaxis due to RSV vaccine | C5824949
+anaphylaxis due to blood administration | C3251583
+nature of allergic reaction - anaphylaxis | C4272613
+anaphylaxis reaction to contrast material | C2215729
+anaphylaxis due to inhaled allergens | C4736212
+anaphylaxis provoked by physical factors | C4736209
+anaphylaxis due to insect venom | C4736208
+anaphylaxis from properly administered anesthesia | C2103670
+Anaphylaxis caused by radiographic contrast media | C5817050
+anaphylaxis due to measles, mumps, rubella vaccine | C5824946
+Anaphylaxis caused by vaccine product containing Human papillomavirus antigen | C3494642
+Anaphylaxis caused by vaccine product containing only Neisseria meningitidis antigen | C3494648
+Anaphylaxis caused by vaccine product containing Streptococcus pneumoniae antigen | C5549835
+Non-allergic anaphylaxis caused by aspirin | C0344180
+Non-allergic anaphylaxis caused by drug | C0344178
+Non-allergic anaphylaxis caused by immunoglobulin | C0344176
+Anaphylaxis caused by allergy skin test | C5687621
+Anaphylaxis due to mast cell disorder | C4543745
+Anaphylaxis caused by honey bee venom | C5817055
+anaphylaxis due to contact with allergens | C4736213
+anaphylaxis due to influenza virus vaccine | C5824941
+anaphylaxis due to human poliovirus vaccine | C5824947
+anaphylaxis from anesthesia due to overdose | C2103671
+anaphylaxis secondary to mast cell disorder | C4736214
+Anaphylaxis caused by vaccine product containing human poliovirus antigen | C5549837
+Anaphylaxis caused by vaccine product containing Influenza virus antigen | C5549841
+Anaphylaxis caused by vaccine product containing Hepatitis B virus antigen | C3494649
+Non-allergic anaphylaxis caused by whole blood | C0344175
+Anaphylaxis caused by Hevea brasiliensis latex protein | C5438739
+Non-allergic anaphylaxis caused by parasympathomimetic agent | C5547724
+Non-allergic anaphylaxis caused by food additive | C3697499
+anaphylaxis due to SARS-CoV-2 vaccine | C5824948
+anaphylaxis due to varicella-zoster-containing vaccine | C5824943
+anaphylaxis due to hepatitis A virus vaccine | C5824942
+anaphylaxis from anesthesia due to halothane overdose | C2103673
+anaphylaxis provoked by physical factors cold-induced | C4736211
+anaphylaxis provoked by physical factors exercise-induced | C4736210
+anaphylaxis from anesthesia due to ether overdose | C2103674
+Anaphylaxis caused by vaccine containing Human alphaherpesvirus 3 antigen | C5549839
+Anaphylaxis due to Hemophilus influenzae type b vaccine | C3536632
+Anaphylaxis caused by vaccine product containing Hepatitis A virus antigen | C5549836
+Anaphylaxis caused by non-steroidal anti-inflammatory agent | C5879842
+Non-allergic anaphylaxis caused by organic phosphorous compound | C5547723
+Anaphylaxis caused by vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens | C3494646
+anaphylaxis due to recombinant herpes-zoster-containing vaccine | C5824944
+anaphylaxis from anesthesia due to nitrous oxide overdose | C2103672
+Improper medication administration, medication side effects, toxicity, anaphylaxis | C3845513
+Anaphylaxis caused by vaccine product containing Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens | C5549838
+Anaphylaxis caused by insect bite and/or insect sting | C5397548
+anaphylaxis due to live attenuated herpes-zoster-containing vaccine | C5824945
+Anaphylaxis caused by vaccine product containing human alphaherpesvirus 3 recombinant surface glycoprotein E antigen | C5549842
+Anaphylaxis caused by vaccine product containing live attenuated human alphaherpesvirus 3 antigen | C5549843
+Non-allergic anaphylaxis caused by non steroidal anti-inflammatory drug | C0344179
+Shock co-occurrent and due to anaphylaxis caused by serum | C4544077
+Anaphylaxis caused by component of vaccine product against severe acute respiratory syndrome coronavirus 2 | C5921028
+Anaphylaxis caused by component of vaccine product containing low dose acellular Bordetella pertussis and Clostridium tetani and low dose Corynebacterium diphtheriae antigens | C3494647
+Anaphylaxis due to the vaccine on or before the date of the encounter (M1311) | C5849231
+Anaphylaxis due to the vaccine on or before the date of the encounter (M1219) | C5849232
+Anaphylaxis caused by component of vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens | C5847602

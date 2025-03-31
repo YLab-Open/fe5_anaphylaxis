@@ -1,0 +1,14 @@
+{
+    "clinical_notes_directory": "/PHShome/bg615/Anaphylaxis_pipeline/Data/EHR Notes",
+    "patient_id_column_name": "PATIENT_NUM",
+    "encounter_id_column_name": "ENCOUNTER_NUM",
+    "note_id_column_name": "TEXT_ID",
+    "note_date_column_name": "UPDATE_DATE",
+    "provider_id_column_name": "PROVIDER_ID",
+    "note_text_column_name": "OBSERVATION_BLOB",
+    "num_processes": 80,
+    "note_chunk_size_bytes": 5120,
+    "UMLS_username": "",
+    "UMLS_password": "",
+    "UMLS_API_key": ""
+}
